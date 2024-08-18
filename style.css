@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Determination Mono";
+    src: url("font/DTM-Mono.otf");
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+html,body{
+	background-color: black;
+	color: white;
+	width: 100%;height: 100%;
+	margin:0px 0px;
+	overflow: hidden;
+	font-family: "Determination Mono", serif;
+}
+button{
+	border:none;
+	background-color: transparent;
+	color: white;
+	font-family: "Determination Mono", serif;
+}
+input{
+	font-family: "Determination Mono", serif;
+}
+header{
+	display: flex;
+	height: calc(10% - 6px);
+	width: calc(98% - 6px);%;
+	border: 3px solid white;
+	margin: 1% 1%;
+	align-items: center;
+	overflow: hidden;
+	overflow-x: auto;
+}
+#canvas_p{
+	text-align: center;
+	width: calc(50% -  2% - 6px);
+	height: 50%;
+	border: 3px solid white;
+	margin: 1% 1%;
+}
+#config{
+	width: calc(50% -  2% - 6px);
+	height: 50%;
+	border: 3px solid white;
+	margin: 1% 1%;
+}
+main{
+	display: flex;
+	height: calc(70% - 6px);
+	width: 100%;
+	margin:0px 0px;
+}
+footer{
+	text-align: center;
+	height: calc(11.5% - 6px);
+	width: calc(97% - 6px);%;
+	border: 3px solid white;
+	margin: 1% 1%;
+	display: flex;
+	padding: 0.25% 0.5%;
+}
+.credit{
+	width: 100%;
+	text-align: center;
+}
+.logo{
+	height: 100%;
+}
+.timeline{
+	height: 100%;
+	width: 250px;
+	display: flex;
+	align-items: center;
+	margin-right: 80px;
+}
+#play-pause{
+	height: 100%;
+	width: 30px;
+}
+#progress{
+	width: 120px;
+}
+#p_display{
+	width: 100px;
+}
+.dot_button{
+	height: 50%;
+}
+
+.inputRange {
+  appearance: none;
+  width: 200px;
+  height: 12px;
+  border: 2px solid #ffffff;
+  background: #000000;
+  cursor: pointer;
+}
+
+/* ツマミ：Chrome, Safari, Edge用 */
+.inputRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0px;
+  height: 12px;
+  border: 2px solid #ffffff;
+  border-radius: 0px;
+  background: #06b6d4;
+  box-shadow: none;
+}
+
+/* ツマミ：Firefox用 */
+.inputRange::-moz-range-thumb {
+  width: 0px;
+  height: 12px;
+  border: 2px solid #ffffff;
+  border-radius: 0px;
+  background: #06b6d4;
+  box-shadow: none;
+}
+.attack{
+	height: 100%;
+	aspect-ratio: 1;
+}
+.attack img{
+	height: 65%;
+}
+.attack p{
+	height: 20%;
+	margin: 0px 0px;
+}
+.overlay{
+	position: absolute;
+	top:25%;
+	left:25%;
+	border: 2px solid #ffffff;
+  border-radius: 0px;
+	width: 48%;
+	height: 48%;
+	padding: 1% 1%;
+	background-color: black;
+}
+#inp_h,#inp_m,#inp_s{
+	width: 30%;
+	color: white;
+	border-radius: 0px;
+	border:2px solid white;
+	background-color: black;
+	height: 30%;
+	font-size: 30px;
+}

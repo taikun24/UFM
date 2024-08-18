@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Taikun24" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<meta name="keywords" content="{{ UNDERTALE,UNDERTALE AU,bad time simulator,sans fight}}">
+	<meta
+	  name="description"
+	  content="This tool can create a battle similar to UNDERTALE.It can then be exported for use in external tools such as the BadTimeSimulator." />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Undertale Fight Maker</title>
+	<meta property="og:title" content="Undertale Fight Maker">
+	<link rel="stylesheet" href="style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="manifest" href="icon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+	<header>
+		<img src="images/logo.png" class="logo" draggable="false">
+		<div class="timeline">
+			<button id="play-pause"><img class="dot_button" src="images/play.svg" draggable="false"></button>
+			<input type="range" class="inputRange" id="progress" min="0" max="100" value="90" step="1">
+			<p id="p_display" onclick="open_length();">00:00.00/00:01.00</p>
+		</div>
+		<a style="width: 6%;" onclick="open_export();">
+			EXPORT
+		</a>
+		<a href="credit.html">CREDIT</a>
+
+	</header>
+	<main>
+		<div id="canvas_p">
+			<canvas id="canvas"></canvas>
+			<div id="config"></div>
+		</div>
+	</main>
+	<footer>
+	</footer>
+	<div class="overlay" id="overlay" style="display:none;">
+		<a id="export_bts" onclick="export_bts();"><h1>Export as Bad Time Simulator</h1></a>
+	</div>
+	<div class="overlay" id="ov_time" style="display:none;">
+		<h1>Change attack length:</h1>
+		<div style="display:flex;width: 100%;height: 50%;"><input type="number" id="inp_h"><p>:</p><input type="number" id="inp_m"><p>:</p><input type="number" id="inp_s"></div>
+	</div>
+	<script src="display.js"></script>
+	<script src="attacks.js"></script>
+	<script src="controll.js"></script>
+	<script src="export.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
